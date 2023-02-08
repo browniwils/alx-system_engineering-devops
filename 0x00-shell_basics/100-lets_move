@@ -1,2 +1,2 @@
 #!/bin/bash
-mv ^[A-Z]{1}.* /tmp/u
+find . -maxdepth 1 -name '[A-Z]' -exec mv {} /tmp/u/ \+
