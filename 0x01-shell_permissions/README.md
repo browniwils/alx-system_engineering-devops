@@ -2,3 +2,4 @@
 $ su betty -> switching to user betty
 $ whoami -> print current user's name
 $ groups -> print groups names
+$ sudo chown betty hello -> changes file hello group name to betty
