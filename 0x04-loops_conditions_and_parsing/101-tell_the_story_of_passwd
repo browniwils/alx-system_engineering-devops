@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This program displays a short story based on content of /etc/passwd file
+
+while IFS=':' read -r us ps uid gid info home shell;
+do
+	echo "The user $us is part of the $gid gang,"\
+	"lives in $home and rides $shell"\
+	".$uid's place is protected by the passcode $ps,"\
+	"more info about the user here: $info"
+done < "/etc/passwd"
