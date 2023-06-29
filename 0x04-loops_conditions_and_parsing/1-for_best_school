@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-This program displays "Best School" 10 times with the help of "for loop"
+# This program displays "Best School" 10 times with the help of "for loop"
 
 
 for ((i=0; i<10; i++))
