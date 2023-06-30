@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This program when run displays a "To infinity and beyond"
+# in a continous loop with no ending unless there is a
+# keyboard interoption Ctrl + C
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
