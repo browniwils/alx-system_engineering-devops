@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This program when run shows "to infinity and beyond"
+# in a continous loop
+
+trap 'echo "I am invincible!!!"' 15
+while true;
+do
+	echo "to infinity and beyond"
+	sleep 2
+done
