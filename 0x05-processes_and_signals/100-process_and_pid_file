@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This program when run creates a file named myscript.pid
+# at directory /var/run containing it's PID
+# where it shows "To infinity and beyond" in a continous loop
+# shows "Y U no love me?! when SIGINT signal is received
+# and deletes file myscript.pid at directory /var/run and kill itself
+# when SIGQUIT OR SIGTERM signal is received
+
+echo "$$" > /var/run/myscript.pid
+
+function killprocess() {
+	rm /var/run/myscript.pid
+	exit
+}
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'echo "I hate the kill command" && killprocess' SIGTERM
+	trap 'killprocess' SIGQUIT
+done
