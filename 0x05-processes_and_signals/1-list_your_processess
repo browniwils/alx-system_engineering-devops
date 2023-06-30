@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This program when run shows all current running processess
+# It displays it for users in users-oriented format
+
+ps -a -x -u -f
