@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This program displays 12 hour and 59 minuts of time
+# where hours is displayed as 0 - 12 and minutes 1 - 59
+
+h=0
+
+while [ $h -le 12 ]
+do
+	echo "Hour: $h"
+	m=1
+	while [ $m -le 59 ]
+	do
+		echo "$m"
+		(( m++ ))
+	done
+	(( h++ ))
+done

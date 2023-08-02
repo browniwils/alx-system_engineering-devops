@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This program displays "Best School" 10 times with the help of "while loop"
+
+c=0
+
+while [ $c -lt 10 ]
+do
+	echo "Best School"
+	(( c++ ))
+done
