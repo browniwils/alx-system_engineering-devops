@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# This program parses apache log files and displays the IP and HTTP
-# status code. Where IP and HTTP code are displayed in sorted order
-
-awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn

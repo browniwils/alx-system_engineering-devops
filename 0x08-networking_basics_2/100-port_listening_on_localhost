@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# This program when run listen to incomming request on port 98
-# in the localhost
-
-nc -l 98

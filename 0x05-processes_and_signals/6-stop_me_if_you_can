@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# This program kills program run by file "4-to_infinity_and_beyond"
-
-pkill -15 "bash ./4-to_infinity_and_beyond" -f

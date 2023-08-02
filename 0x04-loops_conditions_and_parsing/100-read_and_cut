@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# This program displays content of /etc/passwd where
-# only username, user_id and user_home directory path name is showed
-
-while IFS= read -r pd;
-do
-	echo "$pd" | cut -d ':' -f1,3,6
-done < "/etc/passwd"
