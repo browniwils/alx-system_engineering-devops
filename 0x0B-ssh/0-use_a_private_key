@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script connects to server using pri key
+
+ssh ubuntu@34.203.33.204 -i ~/.ssh/school
+
