@@ -1,0 +1,10 @@
+# ssh client config file
+# passowrd auth disabled
+# ssh client use only key auth
+
+Host *
+    HostName 34.203.33.204
+    ServerAlliveInterval 120
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+
