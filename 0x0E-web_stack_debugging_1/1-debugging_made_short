@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script set and configures nginx
+# and kills process nginx
+
+kill "$(pgrep 'nginx' | head -1)"
+
