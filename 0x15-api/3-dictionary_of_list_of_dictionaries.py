@@ -16,4 +16,3 @@ if __name__ == "__main__":
             } for t in requests.get("{}0todos".format(url),
                                     params={"userId": u.get("id")}).json()]
             for u in users}, file_)
-
